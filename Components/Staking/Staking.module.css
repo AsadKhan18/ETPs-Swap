@@ -1,0 +1,196 @@
+.container {
+  max-width: 840px; /* Adjusted width */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font: 24px Outfit, sans-serif;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.stakingContainer {
+  width: 100%; /* Adjusted width */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(30, 30, 73, 0.92);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  margin-bottom: 100px;
+  color: white;
+  font: 24px Outfit, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: normal;
+  /* margin-bottom: 20px; */
+  text-align: left; /* Left align title */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 36px; /* Space between rows */
+}
+
+.leftAlign {
+  flex: 1; /* Left column takes available space */
+  text-align: left; /* Left align text */
+  font-size: 18px;
+}
+
+.rightAlign {
+  flex: 1; /* Right column takes available space */
+  text-align: right; /* Right align text */
+  font-size: 20px;
+}
+
+.fullWidth {
+  width: 100%; /* Full width for labels */
+  font-size: 18px;
+  text-align: left;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 7px;
+  border: 1px solid #162a69;
+  color: white;
+  margin: 12px 5px;
+  background-color: #162a69;
+  font-size: 15px;
+
+}
+
+/* .radioInput {
+  margin-right: 8px; /* Adjust margin 
+}
+
+.checkbox {
+  margin-left: 10px;
+} 
+*/
+
+.radioInput {
+  gap: 16px;
+  &:hover {
+    color: skyblue; /* Light blue color */
+  }
+  border: 1px solid var(--Secondary-color, #162a69);
+  border-right: 1px solid #03b0f4; /* Darker blue border */
+  padding: 0px;
+  border: 0px;
+  width: 8%;
+  height: 1.19em;
+  margin: 20px 0px 0px 0px;
+  color: white;
+  background: #162a69;
+  /* text-align: center; */
+  vertical-align: text-bottom;
+  /* margin-left: 5px; */
+}
+
+.checkbox {
+  margin-left: 10px;
+  border: 0px;
+  width: 15%;
+  height: 2em;
+  margin: 15px 0px 0px 5px;
+}
+
+.stakeButton {
+  max-width: 840px; /* Adjusted width */
+  width: 100%;
+  padding: 10px;
+  border: none;
+  height: 47px;
+  background-color: #0892d0;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: top;
+  text-align: center;
+  margin-top: -90px;
+  
+}
+
+.stakeButton:hover {
+  color: skyblue; /* Change text color on hover */
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ff4f4f;
+  text-align: center;
+}
+
+.tokenPairContainer {
+  display: flex; 
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: space-between;
+  align-items: center;
+  /* flex: 1; */
+}
+
+.tokenPair {
+  display: flex;
+  align-items: center; /* Vertically center the text and icon */
+  
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.tokenPair label {
+  display: flex; /* Ensure label uses flexbox to align text and image */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+}
+.amountLabel {
+  font-size: 18px; /* Set font size to 18px for the amount label */
+  margin-bottom: 8px; /* Add some space below the label */
+}
+.inputandlabel {
+  width: 100%;
+  text-align: left;
+}
+.labelandradios {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .tokenPairContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: space-between; */
+    /* flex: 1;  */
+  }  
+  .row {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin-bottom: 36px; */
+  }
+}
